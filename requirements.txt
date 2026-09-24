@@ -3,3 +3,4 @@ uvicorn
 sqlalchemy
 aiogram
 psycopg2-binary
+psycopg[binary]
