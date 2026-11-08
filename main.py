@@ -9,7 +9,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8643225967:AAF-sfnrFJc_-f36OzeM-BAas9SUkYiZMy4")
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "Gio1088888888")
 
 bot = Bot(token=BOT_TOKEN)
@@ -126,3 +126,4 @@ async def toggle_device_status(callback: types.CallbackQuery):
         await list_devices(callback)
     else:
         db.close()
+

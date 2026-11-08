@@ -1,3 +1,12 @@
 venv/
 __pycache__/
 *.db
+
+# Local credentials and Python runtime artifacts
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
